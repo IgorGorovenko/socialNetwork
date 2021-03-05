@@ -1,10 +1,11 @@
 import s from './Post.module.css';
 
-const Post = () => {
+const Post = (props) => {
+
   return (
     <div className={s.item}>
       <img src='https://freesvg.org/img/generic-avatar.png' />
-      post1
+      {props.message}
       <div>
         <span>like</span>
       </div>
