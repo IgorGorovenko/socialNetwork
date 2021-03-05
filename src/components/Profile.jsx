@@ -1,8 +1,8 @@
-import './Profile.css';
+import s from './Profile.module.css';
 
 const Profile = () => {
   return (
-    <div className='content'>
+    <div className={s.content}>
     <div>
       <img src='https://imgcomfort.com/Userfiles/Upload/images/illustration-geiranger.jpg' width='640'></img>
     </div>
@@ -14,11 +14,11 @@ const Profile = () => {
       <div>
         new post
       </div>
-      <div className='posts'>
-        <div className='item'>
+      <div className={s.posts}>
+        <div className={s.item}>
           post1
         </div>
-        <div className='item'>
+        <div className={s.item}>
           post2
         </div>
       </div>

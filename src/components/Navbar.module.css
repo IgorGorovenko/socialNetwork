@@ -4,5 +4,9 @@
 }
 
 .item {
-  color: #fff;
+  color: white;
+}
+
+.item.active {
+  color: gold;
 }
