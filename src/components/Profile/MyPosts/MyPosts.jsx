@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './MyPosts.module.css';
 import Post from './Post/Post';
-import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../redux/state";
+import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../redux/profileReducer";
 
 const MyPosts = (props) => {
     let postsElements =
@@ -9,7 +9,6 @@ const MyPosts = (props) => {
             message={p.message}
             likesCount={p.likesCount}
         />)
-
     let newPostElement = React.createRef();
 
     let addPost = () => {
