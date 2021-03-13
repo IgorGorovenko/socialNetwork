@@ -9,7 +9,7 @@ import Settings from "./components/Settings/Settings";
 import {BrowserRouter, Route} from "react-router-dom"
 
 const App = (props) => {
-
+    debugger
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
@@ -19,7 +19,7 @@ const App = (props) => {
                     <Route path='/dialogs'
                            render={() => <Dialogs store={props.store} />}/>
                     <Route path='/profile'
-                           render={() => <Profile profilePage={props.state.profilePage}
+                           render={() => <Profile profilePage={props.state.profileReducer}
                                                   dispatch={props.dispatch}/>}/>
                     <Route path='/news'
                            render={() => <News/>}/>
