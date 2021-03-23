@@ -40,6 +40,7 @@ export const profileAPI = {
     updateStatus(status) {
         return instance.put(`profile/status`, {status: status})
     },
+
     savePhoto(photoFile) {
         const formData = new FormData()
         formData.append('image', photoFile)
@@ -48,6 +49,10 @@ export const profileAPI = {
                 'Content-Type': 'multipart/from-data'
             }
         })
+    },
+
+    saveProfile(profile) {
+        return instance.put(`profile`, profile)
     }
 }
 
