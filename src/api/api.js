@@ -1,4 +1,4 @@
-import * as axios from "axios";
+import axios from 'axios';
 
 const instance = axios.create({
     withCredentials: true,
@@ -38,7 +38,7 @@ export const profileAPI = {
         return instance.get(`profile/status/` + userId)
     },
     updateStatus(status) {
-        return instance.put(`profile/status`, {status: status})
+        return instance.put(`profile/status`, { status: status })
     },
 
     savePhoto(photoFile) {
@@ -62,7 +62,7 @@ export const authAPI = {
     },
 
     login(email, password, rememberMe = false, captcha = null) {
-        return instance.post(`auth/login`, {email, password, rememberMe, captcha})
+        return instance.post(`auth/login`, { email, password, rememberMe, captcha })
     },
 
     logout() {
